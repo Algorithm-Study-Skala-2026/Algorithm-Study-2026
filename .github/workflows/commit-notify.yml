@@ -39,8 +39,22 @@ jobs:
           echo "Commit Message: $COMMIT_MESSAGE"
           echo "Commit Author: $COMMIT_AUTHOR"
           echo "Commit Timestamp: $COMMIT_TIMESTAMP"
-      
+
+      - name: Check if should skip
+        id: should_skip
+        run: |
+          COMMIT_MSG="${{ steps.commit_info.outputs.message }}"
+          
+          # update 또는 Update가 포함되면 스킵
+          if echo "$COMMIT_MSG" | grep -iE 'update'; then
+            echo "Skipping commit with 'update' in message: $COMMIT_MSG"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Notify Lambda via API
+        if: steps.should_skip.outputs.skip == 'false'
         env:
           API_URL: ${{ secrets.LAMBDA_API_URL }}
           API_KEY: ${{ secrets.API_KEY }}
