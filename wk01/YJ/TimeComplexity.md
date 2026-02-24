@@ -72,8 +72,7 @@ for i in range(1,101):
 - 여러 개의 다양한 테스트 케이스를 수행해 모든 케이스를 통과해야함
 - ⇒ 최악의 경우를 염두해야 한다
 
-![image.png](attachment:6dede7e3-ad10-4c31-b157-c5d18b6410d5:image.png)
-
+<img width="1019" height="566" alt="image" src="https://github.com/user-attachments/assets/d74ac245-96fa-4f72-921f-d77762f1d9ed" />
 → **데이터의 크기(N)**의 증가에 따라 성능이 달라진다
 
 ### 2-1. 연산 횟수 계산하여 알고리즘 선택
