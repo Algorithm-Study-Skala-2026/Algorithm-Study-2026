@@ -1,5 +1,5 @@
 # 숫자 합 구하기 문제
-
+  
 n = int(input())
 numbers = list(input())
 
