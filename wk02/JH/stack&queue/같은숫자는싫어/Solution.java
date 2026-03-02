@@ -17,7 +17,6 @@ public class Solution {
         for(int i = len - 1; i >= 0; i--){
             answer[i] = stack.pop();
         }
-        
         return answer;
     }
 }
