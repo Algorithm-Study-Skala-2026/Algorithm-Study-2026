@@ -7,7 +7,6 @@ grid = [list(map(int, input().split())) for _ in range(n)]
 dy = [0, 1, 0, -1]
 dx = [1, 0, -1, 0]
 
-
 def bfs():
     q = deque()
     for j in range(n):
@@ -29,4 +28,5 @@ def bfs():
             if grid[j][i] == 0:
                 return -1
     return max_value
+
 print(bfs())
