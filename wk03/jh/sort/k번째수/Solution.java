@@ -1,4 +1,4 @@
-package wk03.jh.sort.k번쨰수;
+package wk03.jh.sort.k번째수;
 
 import java.util.*;
 
