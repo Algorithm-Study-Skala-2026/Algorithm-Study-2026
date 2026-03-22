@@ -19,7 +19,7 @@ BOJ 2문제 풀기
 ### 안민혁
 #### 🎯 목표
 1. BOJ 5문제
-2. Do it! 알고리즘 코딩테스트 with Python 복습
+2. Do it! 알고리즘 코딩테스트 with Python 복습 -> Done
 
 
 ### 이영훈
